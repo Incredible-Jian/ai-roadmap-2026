@@ -1,0 +1,18 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+
+# Operating system
+.DS_Store
+
+.git-corrupt-20261023/

@@ -1,0 +1,35 @@
+# nn.Linear
+nn.Linear(a,b)中的a,b分别代表输入特征的数量和输出特征的数量
+nn.Linear(1,8)权重8个，偏置8个，可训练参数总数为8+8=16
+
+# 激活函数
+神经网络只存在线性层并不能让它表达更复杂的非线性函数，引入激活函数例如
+ReLU(x) = max(0,x)以及
+sigmoid(x) = 1/1+e-x
+
+# forward(x_train)函数
+nn.Module通过__call__机制调用forward()，并处理相应的模块调用逻辑
+因此平时使用model(x)即可，不要使用model.forward()
+
+# nn.MSELoss()
+计算预测值和真实值之间的均方误差
+
+# nn.Module
+PyTorch神经网络模块的基础父类，用来组织和管理神经网络的基础框架。
+可以自动管理参数，例如model.named_parameters()
+方便交给优化器，例如optimizer = torch.optim.SGD( model.parameters(), lr=0.01)
+方便保存和加载模型状态
+torch.save(model.state_dict(), "model.pth")
+model.load_state_dict(
+	torch.load("model.pth",
+map_location="cpu")
+)
+统一控制和推理状态，model.train()、model.eval()
+
+# SGD
+SGD是Stochastic Gradient Descent的缩写，随机梯度下降。
+
+# model.eval()
+切换评估模式，某些模块在训练和评估时的行为不同。
+例如Dropout在训练时会随机屏蔽部分激活值，在评估模式下通常不再随机屏蔽
+BatchNorm在训练和评估时使用统计量的方式不同。

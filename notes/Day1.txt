@@ -1,0 +1,41 @@
+一、 Tensor(张量)的概念
+1.什么是张量？
+Tensor(张量)是PyTorch中最基本的数据结构，可以理解为能够表示多维数据的容器。
+tensor包含shape、dim(Dimensions)、dtype(datatype)
+2.Tensor在人工智能中有什么作用？
+人工智能模型处理的数据，通常都可以转换为张量
+二、Gradient(梯度)的概念
+1.什么是梯度？
+梯度描述函数的输出对输入变量的变化有多敏感，以及函数在当前位置增长最快的方向。
+2.从导数到梯度
+梯度中的每个分量分别表示函数对相应输入变量的偏导数
+三、数学反向求导：链式法则与反响传播
+1.链式法则
+例如有三个参数x，y，z
+y=f(x)
+z=g(y)
+则z通过y依赖于x，则z对x的变化率可以通过z对y多敏感和y对x的变化有多敏感来相乘计算
+2.反向传播
+从最终输出开始，沿着计算过程反响计算各个变量的梯度。
+根据链式法则将当前梯度与局部导数相乘。
+z.backward():从结果开始执行反向求导
+需要记住的细节：PyTorch通常会累计叶子张量的梯度。如果重复调用backward()，而没有清空之前的梯度，结果可能是多次计算的累加值。
+四、Git的提交流程
+1.Git是什么？
+Git是一种分布式版本控制系统。
+2.Git的三个重要区域
+Working Directory 当前实际编辑的项目文件 编写和修改代码
+Staging Area 已选择、准备提交的修改 确定本次提交包含哪些内容
+Repository 已经提交的历史记录 保存项目版本
+编辑文件->Working Directory-------->Staging Area------------>Repository
+                            git add              git commit
+3.流程
+cd project
+git status
+git add
+git status
+git commit -m "Explaination"
+git log --oneline
+git status
+Expected Result: nothing to commit, working tree clean
+
