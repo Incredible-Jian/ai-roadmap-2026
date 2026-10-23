@@ -1,0 +1,38 @@
+# Training Process
+1. Prepare training data
+
+2. Define the neural network
+
+3. Create the model
+
+4. Define the Loss function and optimizer
+
+5. Train the model
+# Detail process
+(1). Forward pass
+(2). Calculate loss
+(3). Clear the old gradients
+(4). Backpropagation
+(5). Update model parameters
+
+6. Test the trained model
+
+# Core Code
+
+predictions = model(x_train)
+loss = criterion(predictions, y_train)
+
+optimizer.zero_grad()
+loss.backward()
+optimizer.step()
+
+# The basis formula of gradients
+
+w{new} = w{old} - lr * partail L / partial w
+
+# Remember to close the calculation of gradient descent
+with torch.no_grad()
+model.eval() doesn't make it closed automaticly
+
+# Next Goal
+Learning Dataset DataLoader Batch Epoch
