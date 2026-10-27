@@ -1,0 +1,20 @@
+# Process
+Construct Data
+Define Dataset
+Split into training set, validating set, testing set
+Create DataLoader
+Define model, Loss function, optimizer
+Start training
+	Iterate over each batch in training set
+	Forward propagation
+	Compute Loss
+	Backpropagation
+	Update parameters
+	Compute the average loss over the entire training set
+	Use the validation set to compute Val Loss
+	If the validation set Loss is lower
+	Save the best model
+Training ends
+Load the best model parameters
+Use the test set for final evaluation
+Predict new data
