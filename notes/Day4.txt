@@ -18,3 +18,40 @@ Training ends
 Load the best model parameters
 Use the test set for final evaluation
 Predict new data
+
+# Core knowledge
+1. data and noise
+Real data may include random noise.
+So, we sometimes add random noise to simulate real data to do experiment.
+The Goal of model is to learn the main rules of data, not every noisy samples.
+2. Spilt dataset
+- Training set
+- Validation set
+- Test set
+
+# The result of today experiment
+
+Experiment name: Advanced Training
+
+Goal: 
+Use PyTorch train neural network.
+
+The experiment result:
+
+- Final test loss: 2.2312
+- Validation loss: 2.7552
+
+Analysis:
+
+Present model can predict main data rules, but some predictions of sample may differ because of noise.
+
+# Conclusion
+
+Fuck!!!!!!Another day of learning neural network, strenthen core knowledge, lets go baby....
+
+# Next Step
+
+Continue to consolidate the PyTorch training pipeline and begin to learn about classification tasks, evaluation metrcs
+and visualization of experiment results.
+
+
