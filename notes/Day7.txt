@@ -1,0 +1,26 @@
+1. 正则化的目的
+- 什么是过拟合？
+- 什么是泛化能力？
+- 正则化为什么能够限制模型复杂度？
+2. L1 与 L2
+对比	L1	L2
+惩罚项	\(\lambda\sum|w|\)	\(\frac{\lambda}{2}\sum w^2\)
+梯度	\(\lambda sign(w)\)	\(\lambda w\)
+特点	倾向产生稀疏参数	倾向整体缩小参数
+
+3. Adam 与 AdamW
+- Adam 中加入 L2 会影响梯度矩估计。
+- AdamW 将权重衰减独立处理。
+- Decoupled Weight Decay 的含义。
+- 记录本次实验的真实输出。
+4. Dropout
+- p 的含义。
+- 随机失活机制。
+- Inverted Dropout。
+- train() 和 eval() 的区别。
+5. Early Stopping
+- best_val_loss
+- patience
+- min_delta
+- best_model_state
+- 为什么需要恢复最佳模型？
