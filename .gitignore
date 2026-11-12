@@ -16,3 +16,21 @@ __pycache__/
 .DS_Store
 
 .git-corrupt-20261023/
+
+# Key
+.env
+.env.*
+!.env.example
+
+# Model
+*.pth
+*.pt
+*.ckpt
+
+# Temporary files
+*.save
+*.swp
+*~
+
+# Papers
+*.pdf
