@@ -13,7 +13,7 @@
 | Day9 | 线性二分类 | 完成训练、验证、测试和决策边界可视化 |
 | Day10 | 线性模型、多层线性模型与 ReLU MLP | 完成非线性分类对比，理解激活函数的作用 |
 | Day11 | IoU、DataLoader 与损失统计 | 完成框重叠实验和 batch 平均损失对比 |
-
+| Day12 | 图像张量、卷积与简单 CNN | 卷积基础已验收；条纹分类实验已运行，CNN 理解验收待完成 |
 ## 目录导航
 
 - [01_python](01_python/)：Python 基础。
@@ -27,6 +27,7 @@
 - [09_binary_classification](09_binary_classification/)：二分类与决策边界。
 - Day10：非线性分类实验，脚本为 `nonlinear_comparison.py`，目录沿用本地现有名称。
 - [11_detection_basics](11_detection_basics/)：IoU 与批次损失统计实验。
+- [12_convolution_basics](12_convolution_basics/): 图像张量、卷积与简单 CNN
 - [notes](notes/)：学习重点与薄弱点。
 - [papers](papers/)：论文索引和阅读笔记。
 
